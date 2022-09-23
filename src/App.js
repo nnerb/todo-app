@@ -8,7 +8,6 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import lists from '../src/data/filterlists.json'
 
-
 /* Contexts */
 import { MainContext } from './Contexts/MainContext';
 
@@ -95,6 +94,7 @@ function App() {
           }
         ]
       })
+      
       return input.task = ""
     }  
   }
