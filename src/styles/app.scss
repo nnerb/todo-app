@@ -1,0 +1,26 @@
+/* Default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    overflow: auto;
+}
+
+
+/* VARIABLES */
+$basecolor: rgba(255,255,255, 1);
+
+.App{
+    min-height:100vh;
+    position: relative;
+    padding-bottom: 6rem;
+    @import './header.scss';
+    @import './footers.scss';
+    @import './main.scss';
+}
+
+

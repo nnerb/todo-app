@@ -1,0 +1,126 @@
+main{
+    width: 100%;
+    max-width: 500px;
+    padding: 0 1rem;
+    margin: -155px auto 0 auto;
+    z-index: 50;
+    h1{
+        letter-spacing: 5px;
+        font-weight: bolder;
+        color: $basecolor;
+    }
+
+    form{
+        margin-top: 35px;
+    }
+
+    input{
+        width: 100%;
+        padding: 0.70rem 0.75rem;
+        border-radius: 4px;
+        border: 2px solid gray;
+        font-size: 1rem;
+        outline: 1px solid transparent;
+    }
+
+    input:focus{
+        outline-width: medium;
+        outline-offset: -2px;
+        outline-color: rgb(117, 117, 211);
+    }
+    ul{
+        background-color: #FFF;
+        margin: 10px 1px 0 1px;
+        box-shadow: 0 5px 20px rgb(202, 202, 202);
+        border-radius: 3px;
+        position: relative;
+        padding-bottom: 2rem;
+       
+
+        .each--tasks{
+            display: flex;
+            align-items: center;
+            border-bottom: rgb(175, 168, 168) 1px solid;
+
+            .button--checker{
+                border-radius: 9999px;
+                width: 1rem;
+                height: 1rem;
+                margin-right: 5px;
+                cursor: pointer;
+                display:grid;
+                place-items: center;
+                background: transparent;
+                border: 1px solid rgb(187, 184, 184);
+            }
+
+            .button--checker.true{
+                background-color: #7575d3; 
+            }
+
+            .fa-check{
+                color: #FFF;
+                margin:0;
+            }
+
+            .task{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 99%; 
+            }
+            .task.line-through{
+                color:rgb(175, 168, 168);
+                text-decoration: line-through;
+            }
+            .fa-times {
+                cursor: pointer;
+                color:rgb(175, 168, 168);
+                display:none;
+            }
+            .fa-times:hover{
+                color: rgb(14, 1, 1);
+            }
+        }
+        .each--tasks:hover{
+            .fa-times{
+                display:block;
+            }
+        }
+
+    }
+
+    li{
+        list-style-type: none;
+        padding: 0.5rem 0.75rem;
+    }
+    
+    .li-functions{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 1 0%;
+        position: absolute;
+        width: 100%;
+
+        *{
+            color: rgba(119,119,119,1);
+            font-size: 0.8rem;
+        }
+    }
+    .mid-buttons{
+        display: flex;
+        gap: 5px;
+    }
+    .buttons{
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .buttons:hover{
+        color: rgba(34,34,34,34)
+    }
+    
+
+}
