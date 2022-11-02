@@ -55,15 +55,10 @@ function App() {
   const handleButtonValue = (name) => {
     setFilterStatus(prevFilter => prevFilter.map(data => {
        if(data.name === name){
-        return {...data, status: !data.status}
+        return {...data, status: false}
        }
        else{
-          if(data.status){
-            return {...data, status: !data.status}
-          }
-          else{
-            return data
-          }
+        return {...data, status: true}
        }
             
     }))
